@@ -1,0 +1,107 @@
+
+
+******************** JAVA TEST************************************
+______________________________________________________________________________________________________
+1.MAX MIN NUMBER or SMALL AND LARGEST NUMBER
+
+public class TestQuestion {
+	public static void main(String[] args) {
+		int a[]= {45,333,76,29,900,23,474,654,29,454};
+		int temp;
+		for (int i = 0; i < a.length; i++) {
+			for (int j = i+1; j < a.length; j++) {
+				if(a[i]>a[j]) {
+					temp=a[i];
+					a[i]=a[j];
+					a[j]=temp;
+				}
+			}
+		
+		}
+		System.out.println("max num"+" "+a[a.length-1]);
+		System.out.println("min num"+" "+a[0]);
+	}
+
+}
+____________________________________________________________________________________________________________
+2  EVEN AND ODD 
+
+public class TestQuestion1 {
+	public static void main(String[] args) {
+		int petalNum;
+		Scanner sc=new Scanner(System.in);
+		int petalNumber=sc.nextInt();
+		
+		
+			if(petalNumber %2==0) {
+				System.out.println("Both are in Love");
+				
+			}
+			else {
+				System.out.println("Both are not in Love");
+			}
+			
+		
+	}
+
+}
+________________________________________________________________________________________________________________________________________
+6.Difference between linkedList and ArrayList in java
+
+ArrayList:internally call array
+          arrayList contain listIterator
+          reading operation is easy
+          Writting Operation is difficult
+
+linkedList:internally call node
+           linkedList dose not contain listIterator
+           reading operation is difficult
+           Writting Operation is easy
+
+______________________________________________________________________________________________________________________________________________________
+3. What are the Specialization and generalization
+generalization:these are refered as superclass
+               subclasses can aqured a properties by superclasses inplicitely
+
+Specialization :these are refered as subclass
+                subclasses can aqured a properties by superclasses explicitely
+
+___________________________________________________________________________________________________________________________________________________________
+5.which sorted collection have you used 
+This comes very late, but there is a class in the JDK just for the purpose of having a sorted list. 
+It is named (somewhat out of order with the other Sorted* interfaces) "java.util.PriorityQueue". 
+It can sort either Comparable<?>s or using a Comparator.
+
+__________________________________________________________________________________________________________________________________________________________
+7.Difference between Iterator and ListIterator
+Iterator: it is used to access the element forward direction
+          it is avilable in collection
+
+ListIterator:it is used to access the element both in forward and backward direction 
+             it is special type avilable in listIterator
+
+___________________________________________________________________________________________________________________________________________________________
+4.
+a)i make my super class methods as private ,this class and methods should not be inherite by other class
+b)The final class is a class that is declared with the final keyword. 
+  Subclasses can't inherit a final class or a final class cannot be inherited by any subclass.
+  So, we can restrict class inheritance by making use of a final class
+________________________________________________________________________________________________________________________________________________________
+10.STATIC AND DYNAMIC POLYMORPHISM IN JAVA
+static polymorphism refered as compiletime polymorphism 
+                    achieved by methode Overloading 
+                    method Overloading means declaration of method more than once with a same within a same class but differe in parameterlist
+
+
+DYNAMIC polymorphism refered as runtime polymorphism 
+                    achieved by methode Overloading 
+                    method Overriding means method signature must be same  but differe in implementation
+________________________________________________________________________________________________________________________________________________________
+11.Hema perform encapsulation by this she can achieve .
+ Hema make a class PersonalInformation variable or properties  as private by this way she give security .private variables cannot be use directly .
+if other person cannot be able to access 
+__________________________________________________________________________________________________________________________________________________________
+
+
+
+
